@@ -1,5 +1,5 @@
 # Echo protocol TCP+UDP
-<img src="[https://image.shutterstock.com/shutterstock/photos/2138257775/display_1500/stock-photo-a-very-sad-crying-emoticon-cartoon-face-icon-2138257775.jpg](https://cdn.discordapp.com/attachments/899764220189605888/1162073940605292614/hffhaafhafhfhahafhfa.PNG?ex=653a9cb1&is=652827b1&hm=e8d65e63ac0714fd81a6cc10e1c1735338ce669ed500d3b5059c0c304cae556a&)" width=10% height=10%>
+<img src="https://image.shutterstock.com/shutterstock/photos/2138257775/display_1500/stock-photo-a-very-sad-crying-emoticon-cartoon-face-icon-2138257775.jpg" width=10% height=10%>
 # UDP
 
 **Server**
