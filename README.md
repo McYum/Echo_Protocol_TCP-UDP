@@ -1,6 +1,6 @@
 # Echo protocol TCP+UDP
 
-## UDP
+# UDP
 
 **Server**
 
@@ -84,7 +84,7 @@ public class TCP_EchoClient extends Thread{
 }
 ```
 
-### TCP
+# TCP
 
 **Server**
 
