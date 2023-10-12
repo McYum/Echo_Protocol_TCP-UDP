@@ -2,7 +2,7 @@
 
 ## UDP
 
-### **Server**
+**Server**
 
 ```java
 import java.io.*;
@@ -45,7 +45,7 @@ public class TCP_EchoServer {
 }
 ```
 
-### **Client**
+**Client**
 
 ```java
 import java.io.*;
