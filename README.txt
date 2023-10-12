@@ -1,3 +1,14 @@
+# Networking Server Examples
+
+This repository contains examples of networking server code in Java.
+
+## TCP Server
+
+### Name: TCP_EchoServer.java
+
+#### Description
+The `TCP_EchoServer` is a simple TCP server that listens on a specified port (in this example, port 420). It accepts incoming client connections and echoes back the messages received from clients. It also includes a special command "kill" to stop the server gracefully.
+
 #### Usage
 
 ```java
