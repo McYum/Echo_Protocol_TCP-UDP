@@ -26,7 +26,7 @@ public class TCP_EchoServer {
 
                     while ((message = in.readLine()) != null) {
                         System.out.println("Received: " + message);
-                        out.println("Echo: " + message);
+                        out.println(message);
 
                         if (message.equalsIgnoreCase("kill")) {
                             System.out.println("Stopping server");
