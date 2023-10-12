@@ -2,7 +2,7 @@
 
 <img src="https://cdn.discordapp.com/attachments/899764220189605888/1162073940605292614/hffhaafhafhfhahafhfa.PNG?ex=653a9cb1&is=652827b1&hm=e8d65e63ac0714fd81a6cc10e1c1735338ce669ed500d3b5059c0c304cae556a&" width=100% height=100%>
 
-# UDP
+# TCP
 
 **Server**
 
@@ -86,7 +86,7 @@ public class TCP_EchoClient extends Thread{
 }
 ```
 
-# TCP
+# UDP
 
 **Server**
 
