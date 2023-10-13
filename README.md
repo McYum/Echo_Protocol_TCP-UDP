@@ -86,6 +86,107 @@ public class TCP_EchoClient extends Thread{
 }
 ```
 
+# TCP2
+
+**Server**
+```java
+import java.io.*;
+import java.net.*;
+
+public class TCP_EchoServer {
+    static final int port = 420;
+
+    public static void main(String[] args) {
+        boolean isRunning = true;
+
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
+            while (isRunning) {
+                try {
+                    Socket socket = serverSocket.accept();
+                    new Echo_Thread(socket).start();
+                } catch (IOException exception) {
+                    exception.printStackTrace();
+                }
+            }
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+}
+```
+**Thread**
+```java
+import java.io.*;
+import java.net.*;
+
+public class Echo_Thread extends Thread {
+    protected Socket socket;
+
+    public Echo_Thread(Socket clientSocket) {
+        this.socket = clientSocket;
+    }
+
+    public void run() {
+        try {
+            BufferedReader in = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
+            PrintWriter out = new PrintWriter(this.socket.getOutputStream(), true);
+            String message;
+
+            while ((message = in.readLine()) != null) {
+                System.out.println("Received: " + message);
+                out.println(message);
+
+                        /*
+                        if (message.equalsIgnoreCase("kill")) {
+                            System.out.println("Stopping server");
+                            isRunning = false;
+                            break;
+                        }
+                        */
+            }
+
+            this.socket.close();
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+}
+```
+
+**Client**
+
+```java
+import java.io.*;
+import java.net.*;
+
+public class TCP_EchoClient extends Thread{
+    public static void main(String[] args) {
+        String serverAddress = "localhost";
+        int serverPort = 420;
+
+        try (Socket socket = new Socket(serverAddress, serverPort)) {
+            BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+
+            String message;
+            while (true) {
+                System.out.println("[Say something] ");
+                System.out.print("[Input]: ");
+                message = userInput.readLine();
+
+                out.println(message);
+
+                String response = in.readLine();
+                System.out.println("Response: " + response);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
 # UDP
 
 **Server**
