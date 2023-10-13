@@ -135,14 +135,6 @@ public class Echo_Thread extends Thread {
             while ((message = in.readLine()) != null) {
                 System.out.println("Received: " + message);
                 out.println(message);
-
-                        /*
-                        if (message.equalsIgnoreCase("kill")) {
-                            System.out.println("Stopping server");
-                            isRunning = false;
-                            break;
-                        }
-                        */
             }
 
             this.socket.close();
@@ -151,6 +143,7 @@ public class Echo_Thread extends Thread {
         }
     }
 }
+
 ```
 
 **Client**
