@@ -3,4 +3,4 @@
 
 # Latest project
 
-![Alt Text](https://gyazo.com/1c8539ba7f241c7c7c385e83ba96ced2.gif)
+![Alt Text](https://gyazo.com/1c8539ba7f241c7c7c385e83ba96ced2)
