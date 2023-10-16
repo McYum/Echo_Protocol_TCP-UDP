@@ -1,5 +1,5 @@
 # Project Dump
-![Alt Text](https://github.com/McYum/Project_Dump/blob/main/thisgoeshard.gif){width=25px height=25px}
+![Alt Text](https://github.com/McYum/Project_Dump/blob/main/thisgoeshard.gif) { width: 200px; }
 
 # Latest project 
 [Go to project](https://github.com/McYum/Project_Dump/tree/main/Java/Plain/HTTPS_Get)
