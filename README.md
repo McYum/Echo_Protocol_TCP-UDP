@@ -6,7 +6,7 @@
 <html lang = "de">
 <head><title>Server Response</title></head>
 <body>
-<h1>Request Information</h1>
+Request Information
 <p>URL: /search?movie=morbius&4k=yes</p>
 <p>Request Headers:</p>
 <ul>
