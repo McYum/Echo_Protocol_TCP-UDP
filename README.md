@@ -2,7 +2,8 @@
 # Latest project 
 [Go to project](https://github.com/McYum/Project_Dump/tree/main/Java/Plain/HTTP_Server_2)
 # Example Output
-<html lan = "de">
+
+<html lang = "de">
 <head><title>Server Response</title></head>
 <body>
 <h1>Request Information</h1>
