@@ -4,7 +4,6 @@
 # Example Output
 
 <html lang = "de">
-<head><title>Server Response</title></head>
 <body>
 Request Information
 <p>URL: /search?movie=morbius&4k=yes</p>
