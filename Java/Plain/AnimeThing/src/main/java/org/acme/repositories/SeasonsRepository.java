@@ -15,7 +15,7 @@ public class SeasonsRepository implements PanacheRepositoryBase<SeasonsEntity, I
     StudiosRepository studiosRepository;
 
     @Transactional
-    public SeasonsEntity addSeason(SeasonAddRequest request) {
+    public SeasonsEntity addSeason(SeasonAddRequest request) throws InterruptedException {
         System.out.println("Received JSON Request: " + request.toString());
         System.out.println(request.animeId);
 
@@ -49,6 +49,7 @@ public class SeasonsRepository implements PanacheRepositoryBase<SeasonsEntity, I
         System.out.println("Persisted Season: " + persistedSeason);
         System.out.println("Logo_Url of connected studio: " + persistedSeason.getStudio().getLogoUrl());
 
+        System.out.println("End of addSeason");
         return seasonEntity;
     }
 

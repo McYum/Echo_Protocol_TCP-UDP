@@ -34,7 +34,7 @@ public class StudiosRepository implements PanacheRepositoryBase<StudioEntity, In
     }
 
     @Transactional
-    public StudioEntity addSeasonToStudio(int studioId, SeasonAddRequest request) {
+    public StudioEntity addSeasonToStudio(int studioId, SeasonAddRequest request) throws InterruptedException {
         StudioEntity studio = findById(studioId);
         if (studio != null) {
             SeasonsEntity seasonEntity = new SeasonsEntity();

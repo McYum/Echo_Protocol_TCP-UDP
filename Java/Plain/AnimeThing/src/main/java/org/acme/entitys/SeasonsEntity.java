@@ -34,7 +34,7 @@ public class SeasonsEntity {
         return studio;
     }
 
-    public void setStudio(StudioEntity studios) {
+    public void setStudio(StudioEntity studios) throws InterruptedException {
         this.studio = studios;
         studios.addSeason(this);
         /*

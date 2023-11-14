@@ -55,8 +55,7 @@ public class SeasonsResource {
     }
 
     @POST
-    @Path("/add")
-    public Response addSeason(SeasonAddRequest request) {
+    public Response addSeason(SeasonAddRequest request) throws InterruptedException {
         SeasonsEntity addedSeason = seasonsRepository.addSeason(request);
 
         if (addedSeason != null) {

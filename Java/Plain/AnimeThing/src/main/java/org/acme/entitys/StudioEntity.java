@@ -26,6 +26,10 @@ public class StudioEntity {
     @OneToMany(mappedBy = "studio", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<SeasonsEntity> seasons;
 
+    public StudioEntity() {
+        this.seasons = new ArrayList<>();
+    }
+
     public int getId() {
         return id;
     }
@@ -71,14 +75,26 @@ public class StudioEntity {
         this.studioId = studioId;
     }
 
-    public void addSeason(SeasonsEntity season) {
+    public void addSeason(SeasonsEntity season) throws InterruptedException {
         System.out.println("trying to connect season: " + season);
+        System.out.println("season check " + seasons);
+
         if (seasons == null) {
-            seasons = new ArrayList<>();
+            this.seasons = new ArrayList<>();
         }
-        
-        this.seasons.add(season);
+
+        System.out.println("End of add season");
+        /*
+        if (seasons == null) {
+            this.seasons = new ArrayList<>();
+        }
+
+
+        System.out.println("season check 2" + this.seasons);
+        Thread.sleep(2500);
+        seasons.add(season);
         //season.setStudio(this);
+        */
     }
 
     public List<SeasonsEntity> getSeasons() {
