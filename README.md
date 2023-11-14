@@ -1,6 +1,6 @@
 # Project Dump
 # Latest project 
-[Go to project]([https://github.com/McYum/Project_Dump/tree/main/Java/Plain/HelloWebApp](https://github.com/McYum/Project_Dump/tree/main/Java/Plain/AnimeThing))
+[Go to project](https://github.com/McYum/Project_Dump/tree/main/Java/Plain/AnimeThing)
 # 👀
 
 ![Alt Text](https://gyazo.com/960ec22eec653d65fff90fc08885fd88.gif)
