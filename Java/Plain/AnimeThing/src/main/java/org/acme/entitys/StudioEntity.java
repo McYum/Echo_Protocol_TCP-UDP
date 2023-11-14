@@ -73,9 +73,7 @@ public class StudioEntity {
 
     public void addSeason(SeasonsEntity season) {
         System.out.println("trying to connect season: " + season);
-        if (seasons != null) {
-            System.out.println("Ran through");
-        } else {
+        if (seasons == null) {
             seasons = new ArrayList<>();
         }
         
