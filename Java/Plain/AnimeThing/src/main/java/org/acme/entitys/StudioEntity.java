@@ -75,11 +75,10 @@ public class StudioEntity {
         System.out.println("trying to connect season: " + season);
         if (seasons != null) {
             System.out.println("Ran through");
-            this.seasons.add(season);
         } else {
             seasons = new ArrayList<>();
         }
-
+        
         this.seasons.add(season);
         //season.setStudio(this);
     }
